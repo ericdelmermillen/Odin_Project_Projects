@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://c1.wallpaperflare.com/preview/928/187/655/landscape-mountains-north-thailand-morning-sun.jpg"), url("https://c4.wallpaperflare.com/wallpaper/944/172/1002/5bd35f6e6d010-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-bar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* outline: 2px solid black; */
+    height: 6rem;
+    width: 100vw;
+    background-color: #999DA0;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    font-family: "Merienda One";
+}
+
+span {
+    white-space: nowrap;
+}
+
+.sub-heading {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.dishes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    height: 100vh;
+    /* outline: 2px solid green; */
+    padding: 100px 0 100px 0;
+}
+
+.dishes img {
+    display: flex;
+    width: 100%;
+    max-width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+img:hover{
+    transform: scale(1.05);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    height: 30px;
+    background-color: #999DA0;
+    width: 100%;
+    color: white;
+    font-size: 1.5rem;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.secondary-font{
+    font-family: Merriweather;
+}
+
+@media only screen and (max-width: 1100px) {
+    /* h1 {
+        color: red;
+    } */
+    .dishes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        height: 100vh;
+        /* outline: 2px solid green; */
+        padding: 100px 0 100px 0;
+    }
+    
+    .dishes img {
+        display: flex;
+        width: 100%;
+        max-width: 18rem;
+        height: 18rem;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    /* h1 {
+        color: red;
+    } */
+    .dishes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        height: 100vh;
+        /* outline: 2px solid green; */
+        padding: 100px 0 100px 0;
+    }
+    
+    .dishes img {
+        display: flex;
+        width: 100%;
+        max-width: 18rem;
+        height: 18rem;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    /* h1 {
+        color: red;
+    } */
+    .dishes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        height: 100vh;
+        /* outline: 2px solid green; */
+        padding: 100px 0 100px 0;
+    }
+    
+    .dishes img {
+        display: flex;
+        width: 100%;
+        max-width: 15rem;
+        height: 15rem;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    /* h1 {
+        color: red;
+    } */
+    .dishes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        height: 100vh;
+        padding: 100px 0 100px 0;
+    }
+    
+    .dishes img {
+        display: flex;
+        width: 100%;
+        max-width: 14rem;
+        height: 14rem;
+        object-fit: cover;
+    }
+    img:hover{
+        transform: scale(1.05);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .dishes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        /* gap: 2rem; */
+        align-items: center;
+        height: 100vh;
+        padding: 100px 0 100px 0;
+    }
+    
+    .dishes img:nth-of-type(1) {
+        display: flex;
+        width: 100%;
+        max-width: 25rem;
+        height: 25rem;
+        object-fit: cover;
+        margin-top: 2.5rem;
+    }
+    img:hover{
+        transform: scale(1.05);
+    }
+    
+    body {
+        background-image: url("https://c1.wallpaperflare.com/preview/928/187/655/landscape-mountains-north-thailand-morning-sun.jpg"), url("https://c4.wallpaperflare.com/wallpaper/944/172/1002/5bd35f6e6d010-wallpaper-preview.jpg");
+        background-repeat: repeat-y;
+    }
+    #dish_3 {
+        padding-bottom: 6rem;
+    }
+}
