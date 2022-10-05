@@ -1,5 +1,9 @@
+/* IMPORTED FONTS: "MERIENDA ONE" FOR HEADING, "MERRIWEATHER SANS" FOR MAIN */
+
 @import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+
+/* HTML RESET */
 
 * {
     margin: 0;
@@ -7,8 +11,18 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: url("https://c1.wallpaperflare.com/preview/928/187/655/landscape-mountains-north-thailand-morning-sun.jpg"), url("https://c4.wallpaperflare.com/wallpaper/944/172/1002/5bd35f6e6d010-wallpaper-preview.jpg");
+/* MAIN PAGE BACKGROUND IMAGE */
+
+.body_bg_index_pg{
+    background-image: url("https://c1.wallpaperflare.com/preview/928/187/655/landscape-mountains-north-thailand-morning-sun.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* KHAO SOI PAGE BACKGROUND IMAGE
+ */
+.body_bg_khaosoi_pg{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/620/423/687/chaing-mai-field-wallpaper-preview.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -40,6 +54,15 @@ span {
     color: white;
     font-size: 2rem;
     margin-bottom: 1rem;
+    
+}
+
+.img_caption {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Merienda One";
+    font-weight: 1000;
 }
 
 .dishes {
@@ -62,7 +85,7 @@ span {
     object-fit: cover;
 }
 
-img:hover{
+.index_pg_imgs:hover{
     transform: scale(1.05);
 }
 
@@ -83,7 +106,8 @@ footer a {
 }
 
 .secondary-font{
-    font-family: Merriweather;
+    font-family: "Merriweather Sans";
+    font-weight: 1000;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -183,7 +207,7 @@ footer a {
         height: 14rem;
         object-fit: cover;
     }
-    img:hover{
+    .index_pg_imgs:hover{
         transform: scale(1.05);
     }
 }
@@ -208,11 +232,11 @@ footer a {
         object-fit: cover;
         margin-top: 2.5rem;
     }
-    img:hover{
+    .index_pg_imgs:hover{
         transform: scale(1.05);
     }
     
-    body {
+    .body_bg_index_pg {
         background-image: url("https://c1.wallpaperflare.com/preview/928/187/655/landscape-mountains-north-thailand-morning-sun.jpg"), url("https://c4.wallpaperflare.com/wallpaper/944/172/1002/5bd35f6e6d010-wallpaper-preview.jpg");
         background-repeat: repeat-y;
     }
