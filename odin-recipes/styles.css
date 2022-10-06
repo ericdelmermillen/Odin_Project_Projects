@@ -19,22 +19,13 @@
     background-size: cover;
 }
 
-/* KHAO SOI PAGE BACKGROUND IMAGE
- */
-.body_bg_khaosoi_pg{
-    background-image: url("https://c4.wallpaperflare.com/wallpaper/620/423/687/chaing-mai-field-wallpaper-preview.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .top-bar {
     position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* outline: 2px solid black; */
-    height: 6rem;
+    height: 7rem;
     width: 100vw;
     background-color: #999DA0;
 }
@@ -53,7 +44,7 @@ span {
 .sub-heading {
     color: white;
     font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     
 }
 
@@ -73,7 +64,6 @@ span {
     gap: 1rem;
     align-items: center;
     height: 100vh;
-    /* outline: 2px solid green; */
     padding: 100px 0 100px 0;
 }
 
@@ -110,10 +100,9 @@ footer a {
     font-weight: 1000;
 }
 
+/* @MEDIA QUERIES */
+
 @media only screen and (max-width: 1100px) {
-    /* h1 {
-        color: red;
-    } */
     .dishes {
         display: flex;
         flex-direction: row;
@@ -122,7 +111,6 @@ footer a {
         gap: 1rem;
         align-items: center;
         height: 100vh;
-        /* outline: 2px solid green; */
         padding: 100px 0 100px 0;
     }
     
@@ -131,14 +119,10 @@ footer a {
         width: 100%;
         max-width: 18rem;
         height: 18rem;
-        object-fit: cover;
     }
 }
 
 @media only screen and (max-width: 1000px) {
-    /* h1 {
-        color: red;
-    } */
     .dishes {
         display: flex;
         flex-direction: row;
@@ -147,7 +131,6 @@ footer a {
         gap: 1rem;
         align-items: center;
         height: 100vh;
-        /* outline: 2px solid green; */
         padding: 100px 0 100px 0;
     }
     
@@ -156,14 +139,10 @@ footer a {
         width: 100%;
         max-width: 18rem;
         height: 18rem;
-        object-fit: cover;
     }
 }
 
 @media only screen and (max-width: 950px) {
-    /* h1 {
-        color: red;
-    } */
     .dishes {
         display: flex;
         flex-direction: row;
@@ -172,7 +151,6 @@ footer a {
         gap: 1rem;
         align-items: center;
         height: 100vh;
-        /* outline: 2px solid green; */
         padding: 100px 0 100px 0;
     }
     
@@ -181,14 +159,10 @@ footer a {
         width: 100%;
         max-width: 15rem;
         height: 15rem;
-        object-fit: cover;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    /* h1 {
-        color: red;
-    } */
     .dishes {
         display: flex;
         flex-direction: row;
@@ -205,7 +179,6 @@ footer a {
         width: 100%;
         max-width: 14rem;
         height: 14rem;
-        object-fit: cover;
     }
     .index_pg_imgs:hover{
         transform: scale(1.05);
@@ -229,7 +202,6 @@ footer a {
         width: 100%;
         max-width: 25rem;
         height: 25rem;
-        object-fit: cover;
         margin-top: 2.5rem;
     }
     .index_pg_imgs:hover{
@@ -237,10 +209,47 @@ footer a {
     }
     
     .body_bg_index_pg {
-        background-image: url("https://c1.wallpaperflare.com/preview/928/187/655/landscape-mountains-north-thailand-morning-sun.jpg"), url("https://c4.wallpaperflare.com/wallpaper/944/172/1002/5bd35f6e6d010-wallpaper-preview.jpg");
+        background-image: url("https://c1.wallpaperflare.com/preview/928/187/655/landscape-mountains-north-thailand-morning-sun.jpg");
         background-repeat: repeat-y;
     }
     #dish_3 {
-        padding-bottom: 6rem;
+        padding-bottom: 5rem;
     }
+    
+    .index_pg_imgs {
+        margin-bottom: 2rem;
+        
+    }
+}
+
+/* KHAO SOI PAGE CSS/* 
+
+/* KHAO SOI PAGE BACKGROUND IMAGE*/
+
+.body_bg_khaosoi_pg{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/620/423/687/chaing-mai-field-wallpaper-preview.jpg");
+    background-size: cover;
+}
+.khaosoi_hero_img {
+    height: 100vh;
+    padding: 100px 0 100px 0;
+    margin: 100 0 0 0 
+}
+
+.khaosoi_hero_img img {
+    display: block;
+    position: relative;
+    top: 3.5rem;
+    left: 1.5rem;
+    width: 100%;
+    max-width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.khaosoi_blurb {
+    color: white;
+    font-size: 1.8rem;
+    font-family: "Merriweather Sans";
+    font-weight: 1000;
 }
